@@ -18,6 +18,10 @@ module.exports = {
       },
     ],
   },
+  options: {
+    'presets': ['es2015', 'react'],
+    'plugins': ['babel-plugin-transform-flow-strip-types'],
+  },
   devServer: {
     contentBase: path.resolve(__dirname, 'dist'), // distディレクトリのファイルを確認する
     port: 3000, // 3000ポートを利用
